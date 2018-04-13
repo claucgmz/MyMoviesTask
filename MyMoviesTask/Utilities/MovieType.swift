@@ -11,4 +11,5 @@ import Foundation
 enum MovieType: String {
   case featured = "Featured Movies"
   case upcoming = "Upcoming Movies"
+  case playing = "Now playing"
 }

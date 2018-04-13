@@ -22,6 +22,8 @@ enum MoviesRouter: URLRequestConvertible {
         return "/movie/upcoming"
       case .featured:
         return "/movie/popular"
+      case .playing:
+        return "/movie/now_playing"
       }
     }
   }

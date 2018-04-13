@@ -26,7 +26,7 @@ class MoviesTableViewController: UITableViewController {
   
   private func getMovies() {
     self.toogleHUD(show: true)
-    MoviesService.getMovies(for: .upcoming)
+    MoviesService.getMovies(for: .playing)
       .map({ movies in
         self.movies = movies
       })
