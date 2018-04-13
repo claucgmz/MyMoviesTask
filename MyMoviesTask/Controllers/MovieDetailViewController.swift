@@ -10,6 +10,7 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
   private weak var movieDetailView: MovieDetailView! { return self.view as? MovieDetailView }
+  private weak var movieTitleLabel: UILabel! { return movieDetailView.titleLabel }
   private weak var movieTagLineLabel: UILabel! { return movieDetailView.tagLineLabel }
   private weak var movieSinopsisLabel: UILabel! { return movieDetailView.sinopsisLabel }
   private weak var movieImageView: UIImageView! { return movieDetailView.movieImageView }
@@ -41,6 +42,7 @@ class MovieDetailViewController: UIViewController {
   
   private func updateUI() {
     title = movie.title
+    movieTitleLabel.text = movie.title
     movieTagLineLabel.text = movie.tagline
     movieSinopsisLabel.text = movie.sinopsis
     

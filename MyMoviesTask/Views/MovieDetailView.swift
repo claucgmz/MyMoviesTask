@@ -32,10 +32,20 @@ class MovieDetailView: UIView {
     return imageView
   }()
   
-  let tagLineLabel: UILabel = {
+  let titleLabel: UILabel = {
     let label = UILabel()
     label.font = UIFont(name: Font.medium.rawValue, size: 22.0)
     label.textColor = Color.lead
+    label.numberOfLines = 0
+    label.lineBreakMode = .byWordWrapping
+    label.text = ""
+    return label
+  }()
+  
+  let tagLineLabel: UILabel = {
+    let label = UILabel()
+    label.font = UIFont(name: Font.regular.rawValue, size: 20.0)
+    label.textColor = Color.secondary
     label.textAlignment = .center
     label.numberOfLines = 0
     label.lineBreakMode = .byWordWrapping
@@ -61,7 +71,7 @@ class MovieDetailView: UIView {
   }()
 
   private lazy var contentStackView: UIStackView = {
-    let stackView = UIStackView(arrangedSubviews: [movieImageView, tagLineLabel, sinopsisLabel])
+    let stackView = UIStackView(arrangedSubviews: [movieImageView, titleLabel, tagLineLabel, sinopsisLabel])
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.distribution = .fill
@@ -99,8 +109,8 @@ class MovieDetailView: UIView {
     ])
     
     NSLayoutConstraint.activate([
-      sinopsisLabel.leadingAnchor.constraint(equalTo: contentStackView.leadingAnchor, constant: 20.0),
-      sinopsisLabel.trailingAnchor.constraint(equalTo: contentStackView.trailingAnchor, constant: -20.0)
+      sinopsisLabel.leadingAnchor.constraint(equalTo: contentStackView.leadingAnchor, constant: 15.0),
+      sinopsisLabel.trailingAnchor.constraint(equalTo: contentStackView.trailingAnchor, constant: -15.0)
     ])
   }
 }
