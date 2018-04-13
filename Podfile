@@ -6,6 +6,8 @@ target 'MyMoviesTask' do
   use_frameworks!
 
   # Pods for MyMoviesTask
+  #Swiftlint is a tool to enforce Swift style and conventions
+  pod 'SwiftLint'
   #Alamofire is an HTTP networking library written in Swift.
   pod 'Alamofire'
   #AlamofireImage is an image component library for Alamofire

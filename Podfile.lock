@@ -13,6 +13,7 @@ PODS:
   - PromiseKit/UIKit (6.2.4):
     - PromiseKit/CorePromise
   - SVProgressHUD (2.2.5)
+  - SwiftLint (0.25.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - ObjectMapper
   - PromiseKit (~> 6.0)
   - SVProgressHUD
+  - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
@@ -27,7 +29,8 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   PromiseKit: 625b1fc69944fc839503748101c5968cf54b527b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: 82ed328f0297c41c7dfcb28a0ce98b1676cf16c0
+PODFILE CHECKSUM: 6c0743b4df2f0d3cc56b1c871d0d42a5ee345d41
 
 COCOAPODS: 1.4.0
