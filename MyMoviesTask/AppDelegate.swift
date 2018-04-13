@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   private func setInitialViewController() {
-    window = UIWindow(frame: UIScreen.main.bounds)
+    window = UIWindow()
     let initialViewController = MoviesTableViewController()
     let navigationController = UINavigationController(rootViewController: initialViewController)
     window?.rootViewController = navigationController

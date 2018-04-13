@@ -51,7 +51,6 @@ enum MoviesRouter: URLRequestConvertible {
   func asURLRequest() throws -> URLRequest {
     let url = try APIManager.baseURLString.asURL()
     var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-    print(url.appendingPathComponent(path))
     urlRequest.httpMethod = method.rawValue
     return try URLEncoding.methodDependent.encode(urlRequest, with: parameters)
   }

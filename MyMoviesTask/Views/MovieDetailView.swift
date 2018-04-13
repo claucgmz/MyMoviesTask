@@ -29,6 +29,7 @@ class MovieDetailView: UIView {
     NSLayoutConstraint.activate([
       imageView.heightAnchor.constraint(equalToConstant: 220.0)
     ])
+    
     return imageView
   }()
   
